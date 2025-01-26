@@ -58,29 +58,74 @@ This project is a Streamlit-based web application that uses OpenAI's GPT model t
 
 ---
 
-## Hosting Instructions
-To host the app using Streamlit Cloud:
-1. Push the project to a GitHub repository.
-2. Visit [Streamlit Cloud](https://streamlit.io/cloud).
-3. Connect your GitHub account and deploy the app.
-4. Share the generated app link with users.
+## Prompts Documentation
+### System Prompt
+```plaintext
+You are an AI travel assistant. Your task is to create a personalized, day-by-day travel itinerary based on user preferences.
+```
+
+### User Prompts
+Example Input:
+```plaintext
+Name: John Doe
+Destination: Paris
+Duration: 5 days
+Budget: Moderate
+Purpose: Leisure
+Preferences: Food, art, and cultural tours
+```
+
+### Model Response (Example Output):
+```plaintext
+Day 1: Arrival in Paris, visit Eiffel Tower, and enjoy a Seine River cruise.
+Day 2: Explore the Louvre Museum and Montmartre art district.
+Day 3: Day trip to Versailles and a French cooking class.
+Day 4: Discover hidden gems in Paris and savor local cuisine.
+Day 5: Relax at Luxembourg Gardens before departure.
+```
+
+Each prompt refines the user inputs and aligns them to create a structured output.
 
 ---
 
-## Example Input and Output
+## Sample Input and Output
 ### Input
-- **Destination**: Paris  
-- **Duration**: 5 days  
-- **Budget**: Moderate  
-- **Purpose**: Leisure  
-- **Preferences**: Food, art, and cultural tours
+- **Destination**: Tokyo  
+- **Duration**: 7 days  
+- **Budget**: Luxury  
+- **Purpose**: Honeymoon  
+- **Preferences**: Scenic views, romantic dinners, and cultural experiences
 
 ### Output
-**Day 1**: Arrival in Paris, visit Eiffel Tower, and enjoy a Seine River cruise.  
-**Day 2**: Explore the Louvre Museum and Montmartre art district.  
-**Day 3**: Day trip to Versailles and take a French cooking class.  
-**Day 4**: Discover hidden gems in Paris and savor local cuisine.  
-**Day 5**: Relax at Luxembourg Gardens before departure.
+**Day 1**: Arrival in Tokyo, dinner at a rooftop restaurant.  
+**Day 2**: Visit Meiji Shrine and Shibuya Crossing.  
+**Day 3**: Day trip to Mount Fuji and Hakone.  
+**Day 4**: Explore Asakusa and a tea ceremony.  
+**Day 5**: Romantic cruise on Tokyo Bay.  
+**Day 6**: Shopping at Ginza and Ikebukuro.  
+**Day 7**: Relaxation at Odaiba and departure.
+
+---
+
+## Hosting Instructions
+To host this application:
+1. Push your code to a GitHub repository.
+2. Go to [Streamlit Cloud](https://streamlit.io/cloud) and connect your GitHub account.
+3. Deploy the app and share the link.
+
+---
+
+## Deliverables
+1. **Final Set of Prompts**: Includes the system prompt, user prompts, and example responses.
+2. **Sample Input and Output**: Provides detailed examples for generating itineraries.
+3. **Documentation**: Explains the process and reasoning behind each prompt.
+4. **Hosted Application**: A live link to the hosted app for user testing.
+
+---
+
+## Bonus Challenge (Optional)
+- Improve flexibility in input formats (e.g., "I want a mix of famous and offbeat places").
+- Add logic to refine vague or incomplete inputs through follow-up prompts.
 
 ---
 
@@ -106,4 +151,5 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ## Acknowledgments
 - [OpenAI](https://platform.openai.com/) for the GPT model.
+- [Streamlit](https://streamlit.io/) for the web framework.GPT model.
 - [Streamlit](https://streamlit.io/) for the web framework.
